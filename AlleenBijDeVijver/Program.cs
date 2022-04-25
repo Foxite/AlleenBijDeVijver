@@ -40,7 +40,7 @@ while (true) {
 	};
 	if (newName != null) {
 		await channel.ModifyAsync(cem => cem.Name = newName);
-		await Task.Delay(TimeSpan.FromSeconds(25));
+		await Task.Delay(TimeSpan.FromSeconds(295));
 	}
 
 	await Task.Delay(TimeSpan.FromSeconds(5));
