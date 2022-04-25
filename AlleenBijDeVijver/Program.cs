@@ -32,7 +32,7 @@ while (true) {
 		break;
 	}
 	
-	string? newName = channel.Users.Count switch {
+	string? newName = channel.Users.Count(member => !member.IsBot) switch {
 		0 when channel.Name == one || channel.Name == multiple => empty,
 		1 when channel.Name == empty || channel.Name == multiple => one,
 		> 1 when channel.Name == empty || channel.Name == one => multiple,
