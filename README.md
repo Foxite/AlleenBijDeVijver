@@ -11,4 +11,5 @@ Dockerfile in AlleenBijDeVijver folder. Envvars:
 - NAME_0
 - NAME_1
 - NAME_M
+
 All are required.
